@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>MePipe</title>
+<style>
+input[type=text], select {
+  width: 90%;
+  height: 5vh;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  position: absolute;
+}
+button {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  width: 10%;
+  height: 5vh;
+  margin-left: 90%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+}
+iframe {
+  height: 95vh;
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<input id="id" type="text"></input>
+<button onclick="load()">Go</button>
+<div id="view"></div>
+<script>
+function load() {
+  id = document.getElementById("id").value;
+  html = "<iframe src=\"https://www.youtube-nocookie.com/embed/" + id + "\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen=\"\"></iframe>"
+  document.getElementById("view").innerHTML = html;
+}
+</script>
+</body>
+</html>

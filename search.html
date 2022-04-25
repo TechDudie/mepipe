@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>MePipe Search</title>
+<style>
+#search {
+  width: 90%;
+  height: 5vh;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box;
+  position: absolute;
+}
+#go {
+  background-color: #FF0000;
+  border: none;
+  color: white;
+  width: 10%;
+  height: 5vh;
+  margin-left: 90%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+}
+#view {
+  display: none;
+}
+</style>
+</head>
+<body>
+<form method="POST">
+<input name="query" id="search" type="text" placeholder="Search">
+<input id="go" type="submit" value="🔍">
+</form>
+<br>
+<div></div>
+</body>
+</html>
